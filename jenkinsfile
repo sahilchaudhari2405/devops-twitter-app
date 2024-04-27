@@ -20,8 +20,8 @@ pipeline{
         stage("Sonarqube Analysis "){
             steps{
                 withSonarQubeEnv('sonar-server') {
-                    sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=twitter \
-                    -Dsonar.projectKey=twitter '''
+                    sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=twitter-clone \
+                    -Dsonar.projectKey=twitter-clone '''
                 }
             }
         }
