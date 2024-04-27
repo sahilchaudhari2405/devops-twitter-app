@@ -49,28 +49,28 @@ pipeline{
             }
         }
 
-        stage("Docker Build & Push"){
-            steps{
-                script{
-                     echo "build image"
-                    sh "docker build -t sahilchaudhari2405/my-repo:${IMAGE_VERSION} ."
-                    withCredentials([usernamePassword(credentialsId: 'docker', passwordVariable: 'DOCKER_PASSWORD', usernameVariable: 'DOCKER_USERNAME')]) {
-                    sh "docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}"
-                    sh "docker push sahilchaudhari2405/my-repo:${IMAGE_VERSION}"
-    }
-                }
-            }
-        }
-        stage("TRIVY"){
-            steps{
-                sh "trivy image nasi101/netflix:latest > trivyimage.txt" 
-            }
-        }
-        stage('Deploy to container'){
-            steps{
-                sh 'docker run -d --name twitter -p 2000:2000 sahilchaudhari2405/my-repo:${IMAGE_VERSION}'
-            }
-        }
+    //     stage("Docker Build & Push"){
+    //         steps{
+    //             script{
+    //                  echo "build image"
+    //                 sh "docker build -t sahilchaudhari2405/my-repo:${IMAGE_VERSION} ."
+    //                 withCredentials([usernamePassword(credentialsId: 'docker', passwordVariable: 'DOCKER_PASSWORD', usernameVariable: 'DOCKER_USERNAME')]) {
+    //                 sh "docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}"
+    //                 sh "docker push sahilchaudhari2405/my-repo:${IMAGE_VERSION}"
+    // }
+    //             }
+    //         }
+    //     }
+    //     stage("TRIVY"){
+    //         steps{
+    //             sh "trivy image nasi101/netflix:latest > trivyimage.txt" 
+    //         }
+    //     }
+    //     stage('Deploy to container'){
+    //         steps{
+    //             sh 'docker run -d --name twitter -p 2000:2000 sahilchaudhari2405/my-repo:${IMAGE_VERSION}'
+    //         }
+    //     }
     }
 }
 
