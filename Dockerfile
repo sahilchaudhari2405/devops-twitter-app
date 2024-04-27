@@ -20,7 +20,7 @@ RUN npm install --prefix frontend && npm run build --prefix frontend
 EXPOSE $PORT
 
 # Set default values for build-time environment variables
-COPY .env .env
+COPY .env /usr/src/app/.env
 
 # Start the server
 CMD ["npm", "start"]
