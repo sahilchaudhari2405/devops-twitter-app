@@ -29,23 +29,12 @@ CLOUDINARY_CLOUD_NAME=...
 CLOUDINARY_API_KEY=...
 CLOUDINARY_API_SECRET=...
 ```
-![image](https://github.com/sahilchaudhari2405/devops-twitter-app/assets/82030235/8108bb12-8f60-4211-aab6-225c043438bf)
-
-
 # devops-twitter-app
-
-  <br>
-  <a href="http://netflix-clone-with-tmdb-using-react-mui.vercel.app/">
-    <img src="./public/assets/netflix-logo.png" alt="Logo" width="100" height="32">
-  </a>
-</div>
-
-<br />
-
-<div align="center">
-  <img src="./public/assets/home-page.png" alt="Logo" width="100%" height="100%">
-  <p align="center">Home Page</p>
-</div>
+##Login page
+![image](https://github.com/sahilchaudhari2405/devops-twitter-app/assets/82030235/3c0503be-6db8-43a9-8797-563331c8d26b)
+  
+##Home page
+![image](https://github.com/sahilchaudhari2405/devops-twitter-app/assets/82030235/024d7007-6e0e-4580-8e60-89d9a28e9094)
 
 ### install docker on host machine
  https://docs.docker.com/engine/install/ 
