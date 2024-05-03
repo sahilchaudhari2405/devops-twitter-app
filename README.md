@@ -29,11 +29,11 @@ CLOUDINARY_CLOUD_NAME=...
 CLOUDINARY_API_KEY=...
 CLOUDINARY_API_SECRET=...
 ```
-# devops-twitter-app
-##Login page
+# Devops-twitter-app
+## Login page
 ![image](https://github.com/sahilchaudhari2405/devops-twitter-app/assets/82030235/3c0503be-6db8-43a9-8797-563331c8d26b)
   
-##Home page
+## Home page
 ![image](https://github.com/sahilchaudhari2405/devops-twitter-app/assets/82030235/024d7007-6e0e-4580-8e60-89d9a28e9094)
 
 ### install docker on host machine
